@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="Components/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="Style/main.css" rel="stylesheet" />
+
+    <!--TODO Anton - should be taken from local.-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-lg-3">
+                <div class="dash-unit">
+                    <dtitle>Site Bandwidth</dtitle>
+                    <hr>
+                    <div id="load"></div>
+                    <h2>45%</h2>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-lg-3">
+                <div class="dash-unit">
+                    <dtitle>Disk Space</dtitle>
+                    <hr>
+                    <div id="space"></div>
+                    <h2>65%</h2>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-lg-3">
+
+                <!-- LOCAL TIME BLOCK -->
+                <div class="half-unit">
+                    <dtitle>Local Time</dtitle>
+                    <hr>
+                    <div class="clockcenter">
+                        <digiclock>12:45:25</digiclock>
+                    </div>
+                </div>
+
+                <!-- SERVER UPTIME -->
+                <div class="half-unit">
+                    <dtitle>Server Uptime</dtitle>
+                    <hr>
+                    <div class="cont">
+                        <p>
+                            <img src="assets/img/up.png" alt="">
+                            <bold>Up</bold>
+                            | 356ms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="Components/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="Components/dash-charts/dash-charts.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+</body>
+</html>
